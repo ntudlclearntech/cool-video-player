@@ -1,0 +1,39 @@
+@import "palette.scss";
+
+:export {
+  primaryMainColor: $primary-main-color;
+  primaryLightColor: $primary-light-color;
+  primaryDarkColor: $primary-dark-color;
+  primaryContrastTextColor: $primary-contrastText-color;
+  secondaryMainColor: $secondary-main-color;
+  secondaryLightColor: $secondary-light-color;
+  secondaryDarkColor: $secondary-dark-color;
+  secondaryContrastTextColor: $secondary-contrastText-color;
+  errorMainColor: $error-main-color;
+  errorLightColor: $error-light-color;
+  errorDarkColor: $error-dark-color;
+  errorContrastTextColor: $error-contrastText-color;
+  warningMainColor: $warning-main-color;
+  warningLightColor: $warning-light-color;
+  warningDarkColor: $warning-dark-color;
+  warningContrastTextColor: $warning-contrastText-color;
+  successMainColor: $success-main-color;
+  successLightColor: $success-light-color;
+  successDarkColor: $success-dark-color;
+  successContrastTextColor: $success-contrastText-color;
+  infoMainColor: $info-main-color;
+  infoLightColor: $info-light-color;
+  infoDarKColor: $info-dark-color;
+  infoContrastTextColor: $info-contrastText-color;
+  textPrimaryColor: $text-primary-color;
+  textSecondaryColor: $text-secondary-color;
+  textDisabledColor: $text-disabled-color;
+  dividerColor: $divider-color;
+
+  grey800Color: $grey-800-color;
+  grey300Color: $grey-300-color;
+  grey200Color: $grey-200-color;
+  grey100Color: $grey-100-color;
+  whiteColor: $white-color;
+  blackColor: $black-color;
+}

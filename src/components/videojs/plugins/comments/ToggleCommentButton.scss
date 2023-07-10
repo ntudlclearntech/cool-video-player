@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Material+Icons);
+
+.vjs-toggle-comments-button {
+  font-family: 'Material Icons', 'sans-serif';
+  cursor: pointer;
+  
+  &.show-comments .vjs-icon-placeholder::before {
+    content: '\e8cd';
+  }
+
+  &.hide-comments .vjs-icon-placeholder::before {
+    content: '\e92a';
+  }
+}

@@ -1,0 +1,47 @@
+.vjs-comments-list {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  max-height: 80%;
+  line-height: 1.5;
+  opacity: 0.9;
+  overflow-y: auto;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.vjs-comments {
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  overflow-y: hidden;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.vjs-comments:hover {
+  cursor: pointer;
+}
+
+.vjs-comments-list-enter {
+  opacity: 0.01;
+  height: 0;
+}
+
+.vjs-comments-list-enter.vjs-comments-list-enter-active {
+  opacity: 0.9;
+  height: 100%;
+  transition: 500ms ease-in;
+}
+
+.vjs-comments-list-leave {
+  opacity: 0.9;
+  height: 100%;
+}
+
+.vjs-comments-list-leave.vjs-comments-list-leave-active {
+  opacity: 0.01;
+  height: 0;
+  transition: 500ms ease-in;
+}

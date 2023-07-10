@@ -1,0 +1,7 @@
+// Hide seek button for small screen
+@media screen and (max-width: 480px) {
+  .video-js .vjs-seek-button {
+    display: none;
+    visibility: hidden;
+  }
+}
