@@ -3,17 +3,14 @@ import React, { FunctionComponent } from 'react';
 import TransitionGroup from 'react-transition-group/TransitionGroup';
 import CSSTransition from 'react-transition-group/CSSTransition';
 
-import Alert from '@mui/material/Alert';
-import Typography from '@mui/material/Typography';
-
 import { Comment } from './models/comment.model';
 
-import styles from './CommentList.module.scss'
+import styles from './CommentList.module.scss';
 
 type CommentListComponentProps = {
   comments: Comment[];
   onClickComment: (comment: Comment) => void;
-}
+};
 
 export const CommentList: FunctionComponent<CommentListComponentProps>
   = (props: CommentListComponentProps) => {
@@ -23,25 +20,21 @@ export const CommentList: FunctionComponent<CommentListComponentProps>
       event.nativeEvent.stopImmediatePropagation();
 
       onClickComment(comment);
-    }
+    };
 
     const renderCommentCard = (comment: Comment) => {
       return (
-        <Alert
-          icon={false} severity="info"
+        <div
           className={`${styles['vjs-comments']}`}
           onClick={event => handleClickComment(event, comment)}
         >
           <strong>{comment.username}</strong>
-          <br />
-          <Typography>
-            <span className="text-dark">
-              {comment.content}
-            </span>
-          </Typography>
-        </Alert>
+          <span className={`${styles['three-lines-ellipsis']}`} >
+            {comment.content}
+          </span>
+        </div>
       );
-    }
+    };
 
     return (
       <div className={`${styles['vjs-comments-list']}`}>
@@ -62,4 +55,4 @@ export const CommentList: FunctionComponent<CommentListComponentProps>
         </TransitionGroup>
       </div>
     );
-  }
+  };

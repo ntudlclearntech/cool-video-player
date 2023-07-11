@@ -1,3 +1,12 @@
+.three-lines-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .vjs-comments-list {
   position: absolute;
   bottom: 0;
@@ -7,17 +16,22 @@
   line-height: 1.5;
   opacity: 0.9;
   overflow-y: auto;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  margin-right: 0.25rem;
 }
 
 .vjs-comments {
   font-size: 0.75rem;
   padding: 0.5rem 1rem;
-  margin-bottom: 0.5rem;
   overflow-y: hidden;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+  color: #383d41;
+  background-color: #e2e3e5;
+  border-color: #d6d8db;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
 }
 
 .vjs-comments:hover {
